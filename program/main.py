@@ -2,18 +2,15 @@
 imie = input("podaj imię: ")
 wiek = input("ile masz lat?: ")
 plec = input("podaj płeć K lub M: ")
-nazwa_plci = ""
 
-if plec == "K":
-    nazwa_plci = "kobietą"
+def WypiszDane(imie, wiek, nazwa_plci):
     print (f"masz na imię: {imie}, masz {wiek} lat i jesteś {nazwa_plci}")
 
+if plec == "K":
+    WypiszDane(imie, wiek, "kobietą")
+
 elif plec == "M":
-    nazwa_plci = "mężczyzną"
-    print(f"masz na imię: {imie}, masz {wiek} lat i jesteś {nazwa_plci}")
+    WypiszDane(imie, wiek, "mężczyzną")
 
 else:
     print ("błędny symbol płci")
-
-
-
